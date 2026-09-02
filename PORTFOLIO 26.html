@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="PORTFOLIO 26.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="box">
+        <!-- Button trigger modal -->
+        <button type="button" class="menubar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <img src="data:image/png;base64,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"
+                width="40px" height="40px" alt="">
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="height: 400px;">
+                        <a href="Home">Home</a>
+                        <a href="About">About</a>
+                        <a href="Skills">Skills</a>
+                        <a href="About">Projects</a>
+                        <a href="Contact">Contact</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <br>
+            <nav>
+                <a href="Home" class="Home">Home</a>
+                <a href="About">About</a>
+                <a href="Skills">Skills</a>
+                <a href="About">Projects</a>
+                <a href="Contact">Contact</a>
+
+
+            </nav>
+
+        </div>
+        <div class="button">
+            <button type="button" class="btn btn-outline-info">View My Work</button> <br>
+            <button type="button" class="btn btn-outline-info">Contact Me</button>
+
+        </div>
+        <div class="photo">
+            <img src="zxc.jpg" width="270px" height="270px" alt="">
+        </div>
+        <br><br><br>
+        <div class="Title">
+
+            <h1>I'm Muhsin</h1>
+            <p></p>
+        </div>
+        <div class="Hi">
+            <h4>Hi</h4>
+        </div>
+    </section>
+    <section class="About_section">
+        <div class="about">
+        <h2>About</h2>
+        <p>I have learned HTML, CSS, and Bootstrap as part of my web development training. I have developed a good
+            understanding of creating structured web pages using HTML, styling websites using CSS, and building
+            responsive and user-friendly layouts using Bootstrap. I am interested in improving my web development skills
+            and creating modern, responsive websites.</p>
+            </div>
+    </section>
+</body>
+
+</html>
